@@ -1,0 +1,149 @@
+body {
+	background: #121212;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	font-size: 20px;
+}
+
+h1,
+h2,
+h3 {
+	text-align: center;
+}
+
+a {
+	padding: 5px;
+	color: #e99eb7;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #585b63;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: #121212;
+	padding: 0 30px;
+	background: black;
+	overflow: hidden;
+	height: 100px;
+}
+
+header > a > img {
+	width: 200px;
+}
+
+header > a {
+	text-decoration: none;
+	color: white;
+}
+
+nav {
+	display: flex;
+}
+
+button,
+input {
+	display: inline-block;
+	margin: 10px;
+	outline: none;
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 600;
+	border-radius: 8px;
+	padding: 14px 24px;
+	border: none;
+	transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s,
+		transform 0.1s ease 0s;
+	background: linear-gradient(to right, rgb(230, 30, 77) 0%, rgb(227, 28, 95) 50%, rgb(215, 4, 102) 100%);
+	color: #fff;
+}
+
+form {
+	width: 100%;
+}
+
+.form-buttons {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.video-container,
+.forms-container {
+	display: flex;
+	width: 100%;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+}
+
+.video-container {
+	margin-top: 150px;
+}
+
+.video-container > * {
+	flex: 1;
+	width: 100%;
+}
+
+label[for='predictor-select'] {
+	width: 200px;
+	text-align: center;
+}
+
+.video-container > select {
+	margin-top: 10px;
+	margin-bottom: 30px;
+	width: 100px;
+	height: 100px;
+}
+
+.forms-container {
+	height: 200px;
+	margin-bottom: 50px;
+}
+
+.prediction-message-container {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: 50px 0;
+	border-bottom: 1px solid #585b63;
+	border-top: 1px solid #585b63;
+	padding: 30px 0;
+}
+
+.prediction {
+	margin: 0 15px;
+	font-size: 40px;
+	color: #bfc3cd;
+	font-style: oblique;
+}
+
+@media screen and (min-width: 900px) {
+	.video-container > * {
+		width: 40%;
+	}
+
+	.prediction-message-container {
+		flex-direction: row;
+	}
+	.prediction {
+		margin-top: -15px;
+	}
+
+	form {
+		width: auto;
+	}
+}
